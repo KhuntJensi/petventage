@@ -1,0 +1,273 @@
+<?php
+include "session.php";
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PetVantage - Cat Accessories Information</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ---------- Global ---------- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #fff9ec, #e8cde5);
+    color: #333;
+}
+header {
+    background-color: #986688;
+    padding: 20px 40px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo { font-size: 26px; font-weight: 700; }
+nav ul { list-style: none; display: flex; }
+nav ul li { margin-left: 20px; }
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+}
+nav ul li a:hover { color: #ffe8f0; }
+.banner {
+    background: url('cat_accessory_banner.jpg') center/cover no-repeat;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 36px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+section {
+    max-width: 1100px;
+    margin: 50px auto;
+    background: rgba(255,255,255,0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 40px;
+}
+section h2 {
+    text-align: center;
+    color: #986688;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 25px;
+}
+.content img {
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.text { flex: 1; line-height: 1.7; }
+.text ul { margin-left: 20px; }
+.text li { margin-bottom: 10px; }
+footer {
+    text-align: center;
+    background-color: #c7d8da;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 40px;
+}
+@media (max-width:768px){
+    .content { flex-direction: column; }
+    .content img { width: 100%; }
+}
+</style>
+</head>
+
+<body>
+<header>
+    <div class="logo">PetVantage</div>
+    <nav>
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="dogs.php">Dogs</a></li>
+            <li><a href="cats.php">Cats</a></li>
+            <li><a href="birds.php">Birds</a></li>
+            <li><a href="about.php">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<?php include "header.php"; ?>
+
+<div class="banner">
+    <h1>🐾 Complete Cat Accessories Knowledge Guide</h1>
+</div>
+
+<!-- FOOD ACCESSORIES -->
+<section>
+    <h2>🍽️ Food & Feeding Accessories</h2>
+    <div class="content">
+        <img src="cat food&feeding.png" alt="Cat Food Accessories">
+        <div class="text">
+            <p>These items help support healthy eating habits and prevent feeding issues:</p>
+            <ul>
+                <li><strong>Food Bowls:</strong> Steel or ceramic bowls prevent bacteria growth.</li>
+                <li><strong>Water Fountains:</strong> Encourage drinking and reduce kidney issues.</li>
+                <li><strong>Automatic Feeders:</strong> Useful for scheduled meals.</li>
+                <li><strong>Slow Feeder Bowls:</strong> Prevent fast eating and vomiting.</li>
+                <li><strong>Treat Dispensers:</strong> Combine play and reward.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- GROOMING -->
+<section>
+    <h2>🛁 Bath & Grooming Accessories</h2>
+    <div class="content">
+        <img src="cat nd dog bath.jpg" alt="Cat Grooming Accessories">
+        <div class="text">
+            <p>Regular grooming reduces shedding, hairballs, and skin issues:</p>
+            <ul>
+                <li><strong>Brushes & Combs:</strong> Helps remove loose fur and prevent mats.</li>
+                <li><strong>Nail Clippers:</strong> Prevent overgrown claws.</li>
+                <li><strong>Cat Shampoo:</strong> Gentle formulas for sensitive skin.</li>
+                <li><strong>Grooming Gloves:</strong> Good for light shedding.</li>
+                <li><strong>Ear & Eye Cleaners:</strong> Maintain hygiene and prevent infections.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- COLLARS & BELTS -->
+<section>
+    <h2>🧷 Collars, Harnesses & Safety Belts</h2>
+    <div class="content">
+        <img src="cat belt.jpg" alt="Cat Harness and Belt">
+        <div class="text">
+            <p>Cats require safe and comfortable gear for outings:</p>
+            <ul>
+                <li><strong>Breakaway Collars:</strong> Safest option—opens if caught on something.</li>
+                <li><strong>Harnesses:</strong> For outdoor walks or controlled exploration.</li>
+                <li><strong>ID Tags:</strong> Important for identification.</li>
+                <li><strong>GPS Trackers:</strong> Helps locate outdoor cats.</li>
+                <li><strong>Car Seat Belts:</strong> Ensures safety during travel.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- CLOTHING -->
+<section>
+    <h2>👗 Clothing & Seasonal Wear</h2>
+    <div class="content">
+        <img src="cat cloth1.jpg" alt="Cat Clothing">
+        <div class="text">
+            <p>Clothes are not always necessary but can be useful in specific situations:</p>
+            <ul>
+                <li><strong>Winter Sweaters:</strong> Good for hairless or senior cats.</li>
+                <li><strong>Rain Capes:</strong> Protect during outdoor rain exposure.</li>
+                <li><strong>Recovery Suits:</strong> Used after surgery instead of cones.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- TOYS -->
+<section>
+    <h2>🧸 Toys & Enrichment Items</h2>
+    <div class="content">
+        <img src="cat toys1.png" alt="Cat Toys">
+        <div class="text">
+            <p>Play helps maintain physical and mental health:</p>
+            <ul>
+                <li><strong>Feather Wands:</strong> Simulate hunting.</li>
+                <li><strong>Laser Pointers:</strong> Great cardio exercise.</li>
+                <li><strong>Catnip Toys:</strong> Stimulate excitement and relaxation.</li>
+                <li><strong>Puzzle Toys:</strong> Improve problem-solving skills.</li>
+                <li><strong>Scratching Posts & Pads:</strong> Prevent furniture damage.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- BEDS -->
+<section>
+    <h2>🛏️ Beds & Comfort Accessories</h2>
+    <div class="content">
+        <img src="cat comfort.png" alt="Cat Beds">
+        <div class="text">
+            <p>Cats spend up to 16 hours a day sleeping. Comfortable beds provide security:</p>
+            <ul>
+                <li><strong>Soft Beds:</strong> For cozy sleeping.</li>
+                <li><strong>Hammock Beds:</strong> Window-mounted or chair-mounted.</li>
+                <li><strong>Heated Beds:</strong> Ideal for winters and senior cats.</li>
+                <li><strong>Cave Beds:</strong> For privacy-loving cats.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- LITTER -->
+<section>
+    <h2>🚽 Litter & Hygiene Accessories</h2>
+    <div class="content">
+        <img src="cat litter.png" alt="Cat Litter Accessories">
+        <div class="text">
+            <p>Clean litter areas prevent behavior issues and infections:</p>
+            <ul>
+                <li><strong>Litter Boxes:</strong> Open, covered or self-cleaning.</li>
+                <li><strong>Litter Types:</strong> Clumping, crystal, natural, scented.</li>
+                <li><strong>Litter Scoops:</strong> For daily cleaning.</li>
+                <li><strong>Litter Mats:</strong> Reduce tracking around the house.</li>
+                <li><strong>Deodorizers:</strong> Control odor safely.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- TRAVEL -->
+<section>
+    <h2>✈️ Travel & Outdoor Accessories</h2>
+    <div class="content">
+        <img src="cat travel.jpg" alt="Cat Travel Accessories">
+        <div class="text">
+            <p>Travel accessories ensure comfort and safety:</p>
+            <ul>
+                <li><strong>Carriers:</strong> Hard, soft, and airline-approved.</li>
+                <li><strong>Portable Litter Boxes:</strong> Useful for road trips.</li>
+                <li><strong>Travel Bowls:</strong> Collapsible and easy to carry.</li>
+                <li><strong>Travel Blankets:</strong> Familiar scents reduce stress.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- HEALTH -->
+<section>
+    <h2>⚕️ Health & Safety Accessories</h2>
+    <div class="content">
+        <img src="cat-health.webp" alt="Cat Health Accessories">
+        <div class="text">
+            <p>These improve health and prevent emergencies:</p>
+            <ul>
+                <li><strong>Flea & Tick Combs:</strong> Basic parasite control.</li>
+                <li><strong>First-Aid Kits:</strong> Includes basic bandages & antiseptic.</li>
+                <li><strong>Water Additives:</strong> Promote dental hygiene.</li>
+                <li><strong>Pet Thermometer:</strong> Useful for monitoring fever.</li>
+                <li><strong>LED Night Collar:</strong> Keeps outdoor cats visible at night.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 PetVantage | Designed with ❤️ for Cat Lovers</p>
+</footer>
+
+</body>
+</html>

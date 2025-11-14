@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PetVantage - Dog Accessories Information</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ---------- Global ---------- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #e8f7ff, #d2e6ff);
+    color: #333;
+}
+header {
+    background-color: #4a7bbd;
+    padding: 20px 40px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo { font-size: 26px; font-weight: 700; }
+nav ul { list-style: none; display: flex; }
+nav ul li { margin-left: 20px; }
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+}
+nav ul li a:hover { color: #d9ecff; }
+.banner {
+    background: url('dog_accessory_banner.jpg') center/cover no-repeat;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 36px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+section {
+    max-width: 1100px;
+    margin: 50px auto;
+    background: rgba(255,255,255,0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 40px;
+}
+section h2 {
+    text-align: center;
+    color: #4a7bbd;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 25px;
+}
+.content img {
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.text { flex: 1; line-height: 1.7; }
+.text ul { margin-left: 20px; }
+.text li { margin-bottom: 10px; }
+footer {
+    text-align: center;
+    background-color: #b8d4f0;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 40px;
+}
+@media (max-width:768px){
+    .content { flex-direction: column; }
+    .content img { width: 100%; }
+}
+</style>
+</head>
+
+<body>
+<header>
+    <div class="logo">PetVantage</div>
+    <nav>
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="dogs.php">Dogs</a></li>
+            <li><a href="cats.php">Cats</a></li>
+            <li><a href="birds.php">Birds</a></li>
+            <li><a href="about.php">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="banner">
+    <h1>🐶 Complete Dog Accessories Knowledge Guide</h1>
+</div>
+
+<!-- FOOD ACCESSORIES -->
+<section>
+    <h2>🍖 Food & Feeding Accessories</h2>
+    <div class="content">
+        <img src="dog food.jpg" alt="Dog Food Accessories">
+        <div class="text">
+            <p>These essentials support healthy eating habits for dogs:</p>
+            <ul>
+                <li><strong>Stainless Steel Bowls:</strong> Prevent bacteria buildup.</li>
+                <li><strong>Elevated Feeders:</strong> Improve digestion, reduce bloating.</li>
+                <li><strong>Slow Feeders:</strong> Prevent overeating and choking.</li>
+                <li><strong>Automatic Feeders:</strong> Help with scheduled meals.</li>
+                <li><strong>Treat Puzzles:</strong> Provide mental stimulation.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- GROOMING -->
+<section>
+    <h2>🛁 Bath & Grooming Accessories</h2>
+    <div class="content">
+        <img src="dog grooming.jpg" alt="Dog Grooming Accessories">
+        <div class="text">
+            <p>Proper grooming keeps dogs clean and healthy:</p>
+            <ul>
+                <li><strong>Brushes & Combs:</strong> Depending on coat type.</li>
+                <li><strong>Nail Clippers:</strong> Prevent injury from overgrown nails.</li>
+                <li><strong>Dog Shampoo:</strong> Formulated for different skin needs.</li>
+                <li><strong>Deshedding Tools:</strong> Reduce shedding.</li>
+                <li><strong>Ear Cleaners:</strong> Reduce risk of infections.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- COLLARS & LEASHES -->
+<section>
+    <h2>🦮 Collars, Leashes & Harnesses</h2>
+    <div class="content">
+        <img src="dog belt.jfif" alt="Dog Collars and Leashes">
+        <div class="text">
+            <p>Essential for outdoor safety and control:</p>
+            <ul>
+                <li><strong>Flat Collars:</strong> Everyday wear.</li>
+                <li><strong>Harnesses:</strong> Reduce neck strain.</li>
+                <li><strong>Retractable Leashes:</strong> Provide freedom during walks.</li>
+                <li><strong>LED Collars:</strong> Great for night walks.</li>
+                <li><strong>ID Tags & GPS:</strong> Ensure safe identification.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- CLOTHING -->
+<section>
+    <h2>🧥 Clothing & Seasonal Wear</h2>
+    <div class="content">
+        <img src="dag cloth.png" alt="Dog Clothing">
+        <div class="text">
+            <p>Useful for protection and seasonal needs:</p>
+            <ul>
+                <li><strong>Winter Jackets:</strong> Essential for small breeds.</li>
+                <li><strong>Raincoats:</strong> Keep dogs dry outdoors.</li>
+                <li><strong>Booties:</strong> Protect paws from heat and cold.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- TOYS -->
+<section>
+    <h2>🧸 Toys & Enrichment</h2>
+    <div class="content">
+        <img src="dog toys.webp" alt="Dog Toys">
+        <div class="text">
+            <p>Play keeps dogs active and mentally stimulated:</p>
+            <ul>
+                <li><strong>Chew Toys:</strong> Help with teething and stress.</li>
+                <li><strong>Tug Ropes:</strong> Great bonding activity.</li>
+                <li><strong>Fetch Toys:</strong> Encourage exercise.</li>
+                <li><strong>Puzzle Toys:</strong> Improve problem-solving skills.</li>
+                <li><strong>Squeaky Toys:</strong> Fun and engaging.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- BEDS -->
+<section>
+    <h2>🛏️ Beds & Comfort Items</h2>
+    <div class="content">
+        <img src="dog comfort.png" alt="Dog Beds">
+        <div class="text">
+            <p>Comfortable beds give dogs quality rest:</p>
+            <ul>
+                <li><strong>Orthopedic Beds:</strong> Great for senior dogs.</li>
+                <li><strong>Bolster Beds:</strong> Provide head support.</li>
+                <li><strong>Cooling Mats:</strong> For warm climates.</li>
+                <li><strong>Heated Beds:</strong> Useful in winter.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- HYGIENE -->
+<section>
+    <h2>🚿 Hygiene & Cleaning Accessories</h2>
+    <div class="content">
+        <img src="dog litter.webp" alt="Hygiene Accessories">
+        <div class="text">
+            <p>These keep your dog's environment clean:</p>
+            <ul>
+                <li><strong>Poop Bags:</strong> Biodegradable options available.</li>
+                <li><strong>Training Pads:</strong> Ideal for puppies.</li>
+                <li><strong>Stain Removers:</strong> For accidents.</li>
+                <li><strong>Grooming Wipes:</strong> Quick cleaning option.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- TRAVEL -->
+<section>
+    <h2>🚗 Travel & Outdoor Gear</h2>
+    <div class="content">
+        <img src="dog travel.webp" alt="Dog Travel Accessories">
+        <div class="text">
+            <p>Ensure safety and comfort during travel:</p>
+            <ul>
+                <li><strong>Carriers & Crates:</strong> Hard or soft depending on travel type.</li>
+                <li><strong>Car Seat Belts:</strong> Keep dogs secure.</li>
+                <li><strong>Travel Water Bottles:</strong> Easy hydration on the go.</li>
+                <li><strong>Portable Bowls:</strong> Lightweight and collapsible.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- HEALTH -->
+<section>
+    <h2>⚕️ Health & Safety Accessories</h2>
+    <div class="content">
+        <img src="dog health.png" alt="Dog Health Accessories">
+        <div class="text">
+            <p>Important tools for dog health:</p>
+            <ul>
+                <li><strong>First Aid Kits:</strong> Includes essentials for emergencies.</li>
+                <li><strong>Flea & Tick Control:</strong> Combs, sprays, and collars.</li>
+                <li><strong>Dental Chews:</strong> Reduce tartar and improve breath.</li>
+                <li><strong>Water Additives:</strong> Support oral hygiene.</li>
+                <li><strong>Thermometers:</strong> Monitor fever.
+<footer>
+    <p>&copy; 2025 PetVantage | Designed with ❤️ for Bird Lovers</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PetVantage - Bird Accessories Information</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ---------- Global ---------- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #f2ffe9, #d8f5c3);
+    color: #333;
+}
+header {
+    background-color: #6aa84f;
+    padding: 20px 40px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo { font-size: 26px; font-weight: 700; }
+nav ul { list-style: none; display: flex; }
+nav ul li { margin-left: 20px; }
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+}
+nav ul li a:hover { color: #e8ffd9; }
+.banner {
+    background: url('bird_accessory_banner.jpg') center/cover no-repeat;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 36px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+section {
+    max-width: 1100px;
+    margin: 50px auto;
+    background: rgba(255,255,255,0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 40px;
+}
+section h2 {
+    text-align: center;
+    color: #6aa84f;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 25px;
+}
+.content img {
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.text { flex: 1; line-height: 1.7; }
+.text ul { margin-left: 20px; }
+.text li { margin-bottom: 10px; }
+footer {
+    text-align: center;
+    background-color: #c9eac1;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 40px;
+}
+@media (max-width:768px){
+    .content { flex-direction: column; }
+    .content img { width: 100%; }
+}
+</style>
+</head>
+
+<body>
+<header>
+    <div class="logo">PetVantage</div>
+    <nav>
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="dogs.php">Dogs</a></li>
+            <li><a href="cats.php">Cats</a></li>
+            <li><a href="birds.php">Birds</a></li>
+            <li><a href="about.php">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="banner">
+    <h1>🦜 Complete Bird Accessories Knowledge Guide</h1>
+</div>
+
+<!-- FOOD ACCESSORIES -->
+<section>
+    <h2>🌽 Food & Feeding Accessories</h2>
+    <div class="content">
+        <img src="birds food.jpg" alt="Bird Food Accessories">
+        <div class="text">
+            <p>Provide proper nutrition and clean feeding setups for birds:</p>
+            <ul>
+                <li><strong>Food Bowls:</strong> Stainless steel or ceramic preferred.</li>
+                <li><strong>Water Dispensers:</strong> Prevent contamination.</li>
+                <li><strong>Seed Mixes:</strong> Species-specific blends.</li>
+                <li><strong>Pellets:</strong> Provide balanced nutrition.</li>
+                <li><strong>Treat Holders:</strong> For fruits and veggies.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- CAGES -->
+<section>
+    <h2>🏠 Bird Cages & Habitat Accessories</h2>
+    <div class="content">
+        <img src="bird_Habitat.jpg" alt="Bird Cage Accessories">
+        <div class="text">
+            <p>Comfortable habitats help birds stay safe and stress-free:</p>
+            <ul>
+                <li><strong>Spacious Cages:</strong> Enough room to fly and move.</li>
+                <li><strong>Perches:</strong> Natural wood helps foot health.</li>
+                <li><strong>Cage Liners:</strong> Easy cleaning.</li>
+                <li><strong>Swings & Ladders:</strong> Encourage activity.</li>
+                <li><strong>Cage Covers:</strong> For better sleep cycles.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- GROOMING -->
+<section>
+    <h2>🛁 Grooming & Hygiene Accessories</h2>
+    <div class="content">
+        <img src="birds grooming.webp" alt="Bird Grooming Accessories">
+        <div class="text">
+            <p>Keep birds clean and maintain feather health:</p>
+            <ul>
+                <li><strong>Bird Baths:</strong> Encourage natural cleaning.</li>
+                <li><strong>Nail Clippers:</strong> Prevent overgrowth.</li>
+                <li><strong>Feather Sprays:</strong> Support plumage health.</li>
+                <li><strong>Beak Conditioners:</strong> Prevent cracking.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- TOYS -->
+<section>
+    <h2>🧸 Toys & Enrichment</h2>
+    <div class="content">
+        <img src="birds toys.jpg" alt="Bird Toys">
+        <div class="text">
+            <p>Birds require mental stimulation for good well-being:</p>
+            <ul>
+                <li><strong>Chew Toys:</strong> Keeps beaks healthy.</li>
+                <li><strong>Ropes & Knots:</strong> Encourage climbing.</li>
+                <li><strong>Foraging Toys:</strong> Mimic natural feeding behavior.</li>
+                <li><strong>Bells & Mirrors:</strong> Provide entertainment.</li>
+                <li><strong>Puzzle Toys:</strong> Boost intelligence.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- TRAVEL -->
+<section>
+    <h2>🚗 Travel & Outdoor Gear</h2>
+    <div class="content">
+        <img src="birds travel.jpg" alt="Bird Travel Accessories">
+        <div class="text">
+            <p>Safe travel ensures comfort and reduces stress:</p>
+            <ul>
+                <li><strong>Travel Carriers:</strong> Ventilated and bird-safe.</li>
+                <li><strong>Portable Bowls:</strong> Easy feeding on the go.</li>
+                <li><strong>Travel Covers:</strong> Reduce anxiety during transport.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- HEALTH -->
+<section>
+    <h2>⚕️ Health & Safety Accessories</h2>
+    <div class="content">
+        <img src="birds first aid.jpg" alt="Bird Health Accessories">
+        <div class="text">
+            <p>Ensure your bird stays healthy and protected:</p>
+            <ul>
+                <li><strong>First Aid Kits:</strong> Essential for minor injuries.</li>
+                <li><strong>Calcium Blocks:</strong> Strengthen bones.</li>
+                <li><strong>Vitamin Drops:</strong> Boost immunity.</li>
+                <li><strong>Cuttlebones:</strong> Important for beak health.</li>
+                <li><strong>Thermometers:</strong> Monitor room temperature.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 PetVantage | Designed with ❤️ for Bird Lovers</p>
+</footer>
+
+</body>
+</html>
